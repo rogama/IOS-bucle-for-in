@@ -25,5 +25,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    NSArray *array =[[NSArray alloc] initWithObjects: @"texto1", @"texto2",@"texto3",@"texto4", nil];
+    
+    for (NSString *cadena in array) {
+        NSLog(@"%@", cadena);
+    }
+}
 @end
